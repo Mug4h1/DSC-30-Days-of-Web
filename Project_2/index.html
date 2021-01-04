@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        form {
+            background-color: rgba(218, 112, 214, 0.7);
+            max-width: 100%;
+            border: 2px solid black;
+            padding: 5px;
+        }
+        input, textarea {
+            background-color: lightgrey;
+            border: 2px solid black;
+            padding: 5px; 
+        }
+        body {
+            background-image: radial-gradient(peachpuff, mediumvioletred);
+            color: black; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        } 
+        header, footer, h3, p, div, figure {
+            text-align: center;
+        }
+        table {
+            background-color: pink;
+            color: black;
+            background-size: cover;
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            z-index: -1;
+        }
+        button:hover {
+            background-color: gold;
+            color: maroon;
+        }
+        .in {
+            background-image: linear-gradient(pink, orchid);
+            font-family: cursive;
+            text-align: right;
+            color: black;
+        }
+        .out {
+            background-image: linear-gradient(pink, mediumpurple);
+            font-family: cursive;
+            text-align: left;
+            color: black;
+        }
+    </style>
+    <header>
+        <h1><u>Portfolio</u></h1>
+        <h3><i>Mugdha Korade</i></h3>
+        <p>| Studying in Electronics and Communication in Usha Mittal Institute of Technology (UMIT), SNDT |</p>
+    </header>
+    <br>
+    <body>
+        <h3><u>About</u></h3>
+        <p>2nd Year student aspiring to be a web/app developer.</p>
+        <p>Willing to gain knowledge as I believe that knowledge never goes to waste.</p>
+        <table border="1">
+            <tr>
+                <th>Sr. No.</th>
+                <th colspan="4" >Certifications</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <th colspan="4">Programming Languages</th>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>C (intermediate)</td>
+                <td>C++ (intermediate)</td>
+                <td>Python (beginner)</td>
+                <td>Kotlin (beginner)</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <th colspan="4">Ongoing Projects</th>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>IoT</td>
+                <td>App Development</td>
+                <td>Web Development</td>
+                <td>Winter codess</td>
+            </tr>
+        </table>
+        <br>
+        <figure>
+            <p><b><u>My Interests:</u></b></p>
+            <p class="in"><b>Communication in Electronics</b><br>
+                In telecommunication, communications-electronics (C-E) is the specialized field concerned with the use of electronic devices and systems for the acquisition or acceptance, processing, storage, display, analysis, protection, disposition, and transfer of information.<br>
+                C-E includes the wide range of responsibilities and actions relating to:<br>
+                Electronic devices and systems used in the transfer of ideas and perceptions;<br>
+                Electronic sensors and sensory systems used in the acquisition of information devoid of semantic influence;<br>
+                Electronic devices and systems intended to allow friendly forces to operate in hostile environments and to deny to hostile forces the effective use of electromagnetic resources.<br>
+            <img src="Com.jpeg" alt="Communication" width="300" height="200">
+            </p>
+            <p class="out"><b>Web Development</b><br>
+                Web development is the building and maintenance of websites; it's the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.<br>
+                 Web developers, or 'devs', do this by using a variety of coding languages.<br>
+            <img src="WD.png" alt="Web Development" width="300" height="200">
+            </p>
+            <p class="in"><b>IoT</b><br>
+                The internet of things, or IoT, is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers (UIDs) and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.<br>
+                An IoT ecosystem consists of web-enabled smart devices that use embedded systems, such as processors, sensors and communication hardware, to collect, send and act on data they acquire from their environments.<br>
+                IoT devices share the sensor data they collect by connecting to an IoT gateway or other edge device where data is either sent to the cloud to be analyzed or analyzed locally.<br>
+            <img src="IoT.png" alt="IoT" width="300" height="200">
+            </p>
+        </figure>
+        <br>
+        <div>
+            <video width="500" height="400" controls>
+                <source src="WebDev.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br>
+        <form action="../CSS/first_page.html" method="post">
+            <fieldset>
+                <legend>Contact Me:</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                <label for="tnum">Phone Number:</label><br>
+                <input type="tel" id="tnum" name="tnum" pattern="[1234]{4}-[5678]{4}-[90]{2}" placeholder="1234-5678-90"><br>
+                <label for="em">Email:</label><br>
+                <input type="email" id="em" name="em" placeholder="name@example.com"><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" rows="10" cols="30" placeholder="Type your message..."></textarea><br>
+                <button type="button" onclick="alert('Thank you for your response!')">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+    <footer>
+        <p>Contact Info:-</p>
+        <a href="https://github.com/Mug4h1" title="Github">
+            <img src="GH.png" alt="Github" width="30" height="30">
+        </a>
+        <a href="https://www.linkedin.com/in/mugdha-korade-5b64131b4" title="LinkedIn profile">
+            <img src="LI.jpg" alt="LinkedIn" width="30" height="30">
+        </a>
+        <a href="mailto:mugdhakorade@gmail.com" title="Gmail">
+            <img src="GM.png" alt="Gmail" width="40" height="30">
+        </a>
+    </footer>
+</html>
